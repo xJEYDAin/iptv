@@ -47,7 +47,11 @@ class Grouper:
             for line in alias_file.read_text(encoding="utf-8").splitlines():
                 line = line.strip()
                 if line and not line.startswith("#"):
-                    parts = line.split("=", 1)
+                    # 支持 "->" 和 "=" 分隔符
+                    if "->" in line:
+                        parts = line.split("->", 1)
+                    else:
+                        parts = line.split("=", 1)
                     if len(parts) == 2:
                         self._aliases[parts[0].strip()] = parts[1].strip()
         return self._aliases
@@ -80,16 +84,19 @@ class Grouper:
             merged = normalize_channels(channels_dict, aliases)
             print(f"[Grouper] 合并后剩余 {len(merged)} 个频道")
 
-            # 转换回 Channel 对象
+            # 转换回 Channel 对象，并使用标准化名称
             channels = []
             for ch_dict in merged:
+                normalized = ch_dict.get("_normalized_name", "")
+                # 使用标准化名称（如果可用）
+                display_name = normalized if normalized else ch_dict.get("name", "")
                 ch = Channel(
-                    name=ch_dict.get("name", ""),
+                    name=display_name,
                     url=ch_dict.get("url", ""),
                     logo=ch_dict.get("logo", ""),
                     group=ch_dict.get("group", ""),
                 )
-                ch._normalized_name = ch_dict.get("_normalized_name", "")
+                ch._normalized_name = normalized
                 channels.append(ch)
 
         # 3. 分组

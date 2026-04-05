@@ -629,11 +629,19 @@ def categorize(name: str, group: str, logo: str = "") -> str:
 
     # ── 4. 港澳台 ─────────────────────────────────────────────
     # TVB
-    tvb_kw = [r"tvb", r"翡翠台", r"明珠台", r"j2", r"j1", r"tvbjade", r"tvbpearl"]
+    tvb_kw = [r"tvb", r"翡翠台", r"明珠台", r"j2", r"j1", r"tvbjade", r"tvbpearl", r"无线新闻", r"无线财经", r"星河"]
     if _match(name_lower, group_lower, tvb_kw):
-        # 排除误匹配
-        non_hk = [r"aljadeed", r"al jadeed", r"pearl fm", r"citytv", r"city tv",
-                  r"16tv", r"conectv", r"creatv", r"canal30"]
+        # 排除误匹配（非香港的 TVB）
+        non_hk = [
+            r"aljadeed", r"al jadeed", r"pearl fm", r"citytv", r"city tv",
+            r"16tv", r"conectv", r"creatv", r"canal30",
+            r"tv bahia", r"tvbergued", r"tv b", r"tvbahia", r"tvba",
+            r"creatvbay", r"peacetv", r"novatv", r"staratv", r"staratvbandung",
+            r"jawapos", r"ktv", r"nk", r"nos", r"elive", r"ebony",
+            r"conectv", r"ctv", r"dj13", r"elive",
+            r"plutotv", r"mtv", r"peniel", r"tvbvi", r"tvbrasil",
+            r"tvbs", r"tvbrics", r"tvb娱乐",
+        ]
         if _match(name_lower, group_lower, non_hk):
             return recategorize_others(name, group, logo)
         return "📺 TVB"
