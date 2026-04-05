@@ -4,6 +4,19 @@
 
 ---
 
+## 📤 播放列表地址
+
+**gh-pages 分支**（每日自动更新）：
+
+| 文件 | 地址 |
+|------|------|
+| 全部频道 | https://raw.githubusercontent.com/xJEYDAin/iptv/gh-pages/iptv.m3u |
+| 中国大陆 | https://raw.githubusercontent.com/xJEYDAin/iptv/gh-pages/channels/%E4%B8%AD%E5%9B%BD%E5%A4%A7%E9%99%86.m3u |
+| 港澳台 | https://raw.githubusercontent.com/xJEYDAin/iptv/gh-pages/channels/%E6%B8%AF%E6%BE%B3%E5%8F%B0.m3u |
+| 海外国际 | https://raw.githubusercontent.com/xJEYDAin/iptv/gh-pages/channels/%E6%B5%B7%E5%A4%96%E5%9B%BD%E9%99%85.m3u |
+
+---
+
 ## 📡 数据源
 
 **20 个数据源**，按优先级排序：
@@ -25,15 +38,6 @@
 | 5 | free-tv-* (HK/TW/CN/JP/KR) | 各国频道 |
 | 6 | free-tv-* (US/UK) | 欧美频道 |
 | 5 | vbskycn-iptv4 | IPv6 特色 |
-
----
-
-## 📤 输出结果
-
-| 文件 | 说明 |
-|------|------|
-| `iptv.m3u` | 全部频道 |
-| `channels/` | 按分组生成的文件 |
 
 ---
 
@@ -89,8 +93,8 @@ pip install -r requirements.txt
 # 运行完整流程
 python -m src.main --config ./config --output ./output
 
-# 禁用缓存
-python -m src.main --no-cache
+# 跳过验证（快速测试）
+python -m src.main --skip-validation
 ```
 
 ---
@@ -102,6 +106,7 @@ python -m src.main --no-cache
 | `--config, -c` | 配置文件目录 |
 | `--output, -o` | 输出目录 |
 | `--no-cache` | 禁用缓存 |
+| `--skip-validation` | 跳过 URL 验证 |
 
 ---
 
