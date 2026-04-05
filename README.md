@@ -6,14 +6,14 @@
 
 ## 📤 播放列表地址
 
-**gh-pages 分支**（每日自动更新）：
+**主分支**（每日自动更新）：
 
 | 文件 | 地址 |
 |------|------|
-| 全部频道 | https://raw.githubusercontent.com/xJEYDAin/iptv/gh-pages/iptv.m3u |
-| 中国大陆 | https://raw.githubusercontent.com/xJEYDAin/iptv/gh-pages/channels/%E4%B8%AD%E5%9B%BD%E5%A4%A7%E9%99%86.m3u |
-| 港澳台 | https://raw.githubusercontent.com/xJEYDAin/iptv/gh-pages/channels/%E6%B8%AF%E6%BE%B3%E5%8F%B0.m3u |
-| 海外国际 | https://raw.githubusercontent.com/xJEYDAin/iptv/gh-pages/channels/%E6%B5%B7%E5%A4%96%E5%9B%BD%E9%99%85.m3u |
+| 全部频道 | https://raw.githubusercontent.com/xJEYDAin/iptv/main/output/iptv.m3u |
+| 中国大陆 | https://raw.githubusercontent.com/xJEYDAin/iptv/main/output/channels/%E4%B8%AD%E5%9B%BD%E5%A4%A7%E9%99%86.m3u |
+| 港澳台 | https://raw.githubusercontent.com/xJEYDAin/iptv/main/output/channels/%E6%B8%AF%E6%BE%B3%E5%8F%B0.m3u |
+| 海外国际 | https://raw.githubusercontent.com/xJEYDAin/iptv/main/output/channels/%E6%B5%B7%E5%A4%96%E5%9B%BD%E9%99%85.m3u |
 
 ---
 
