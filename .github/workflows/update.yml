@@ -35,6 +35,7 @@ jobs:
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git add .
           git commit -m "Update IPTV $(date +'%Y-%m-%d %H:%M')"
+          git branch -M gh-pages
           git push -f https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }} HEAD:gh-pages || true
         continue-on-error: true
 
