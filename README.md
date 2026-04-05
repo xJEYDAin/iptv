@@ -10,10 +10,21 @@
 
 | 文件 | 地址 |
 |------|------|
-| 全部频道 | https://raw.githubusercontent.com/xJEYDAin/iptv/main/output/iptv.m3u |
-| 中国大陆 | https://raw.githubusercontent.com/xJEYDAin/iptv/main/output/channels/%E4%B8%AD%E5%9B%BD%E5%A4%A7%E9%99%86.m3u |
-| 港澳台 | https://raw.githubusercontent.com/xJEYDAin/iptv/main/output/channels/%E6%B8%AF%E6%BE%B3%E5%8F%B0.m3u |
-| 海外国际 | https://raw.githubusercontent.com/xJEYDAin/iptv/main/output/channels/%E6%B5%B7%E5%A4%96%E5%9B%BD%E9%99%85.m3u |
+| 全部频道 | https://raw.githubusercontent.com/xJEYDAin/iptv/main/output/all_merged.m3u |
+| 港澳台 | https://raw.githubusercontent.com/xJEYDAin/iptv/main/output/hk_merged.m3u |
+
+---
+
+## 📊 频道统计
+
+| 分组 | 数量 |
+|------|------|
+| 央视频道 | 1,552 |
+| 各省频道 | ~2,000 |
+| 港澳台 | ~700 |
+| 海外国际 | ~20,000 |
+
+**总计**：约 23,000 个频道
 
 ---
 
@@ -55,7 +66,7 @@
 | Fetcher | 多源抓取、m3u 解析、并发控制 |
 | Validator | HEAD 验证、Content-Type 检查、代理域名拒绝 |
 | Grouper | 关键词+正则分组、频道名称标准化 |
-| Generator | m3u 格式生成、多文件输出 |
+| Generator | m3u 格式生成、EPG 支持 |
 | Cache | JSON 缓存、TTL 支持 |
 
 ---
