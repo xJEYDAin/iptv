@@ -20,7 +20,7 @@ TVB 翡翠台 -> TVB 翡翠台
 翡翠台 - 线路3（高清，香港线路） -> TVB 翡翠台
 TVB 翡翠台backup -> TVB 翡翠台
 [BD]翡翠台 -> TVB 翡翠台
-[BD]tvb翡翠 -> TVB 翡翠台
+tvb翡翠 -> TVB 翡翠台
 
 明珠台 -> TVB 明珠台
 TVB明珠台 -> TVB 明珠台
@@ -58,8 +58,17 @@ tvbplus -> TVB Plus
 [BD]tvbplus -> TVB Plus
 [HD]tvbplus -> TVB Plus
 [BD]tvbplus超清 -> TVB Plus
+TVB Plus超清 -> TVB Plus
+TVBPearl -> TVB 明珠台
 
-TVB Pearl -> TVB 明珠台
+TVB 明珠台高清 -> TVB 明珠台
+TVB J1 -> TVB J2
+
+tvb娱乐新闻 -> TVB 娱乐新闻
+TVB娱乐新闻 -> TVB 娱乐新闻
+TVB娱乐新闻台 -> TVB 娱乐新闻
+TVB生活台 -> TVB 生活台
+TVB娱乐 -> TVB
 
 # ===== ViuTV =====
 ViuTV -> ViuTV
@@ -122,6 +131,9 @@ TVBS 亚洲 -> TVBS 亚洲台
 tvbs闽南 -> TVBS 闽南台
 TVBS 闽南 -> TVBS 闽南台
 [BD]TVBS亚洲*28 -> TVBS 亚洲台
+TVBS-asia -> TVBS 亚洲台
+TVBSnew -> TVBS
+TVBSnew$ -> TVBS
 
 台视 -> 台视
 台視 -> 台视

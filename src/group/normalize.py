@@ -63,8 +63,8 @@ _STRIP_PATTERNS = [
     # 2. 方括号/书名号内容
     re.compile(r'\s*【[^】]*】'),                  #  【蓝光1】【官方】
     re.compile(r'\[[^\]]*\]\s*'),                 #  [BD]、[HD]、[SD] 前缀
-    # 3. 随机数字后缀（*28 等）
-    re.compile(r'\*\d+\s*$'),                       #  *28 等
+    # 3. 随机后缀（*28、*ee 等）
+    re.compile(r'\*[a-zA-Z0-9]+\s*$'),                       #  *28、*ee 等
     # 4. 括号内容（线路、分辨率、地区等）
     re.compile(r'[\(（][^)）]*线路[^)）]*[\)）]'),  # （大陆线路）（香港线路）
     re.compile(r'[\(（][^)）]*高清[^)）]*[\)）]'),  # （高清）
@@ -77,7 +77,7 @@ _STRIP_PATTERNS = [
     re.compile(r'[\(（][^)）]*\d+K[^)）]*[\)）]'),  # （8K）等
     re.compile(r'\s*[\(（][^)）]*[\)）]'),          # 残留的空括号
     # 5. 尾部分辨率（无论有无 dash）
-    re.compile(r'\s*[-–—·]?\s*(1080[Pp]|720[Pp]|480[Pp]|4K|8K|HD|SD|FHD|UHD)\s*$', re.IGNORECASE),
+    re.compile(r'\s*[-–—·]?\s*(1080[Pp]|720[Pp]|480[Pp]|4K|8K|HD|SD|FHD|UHD|超清|高清)\s*$', re.IGNORECASE),
     # 6. backup/备用 后缀
     re.compile(r'\s*[-–—·]?\s*backup\s*$', re.IGNORECASE),
     # 7. 多余空格
