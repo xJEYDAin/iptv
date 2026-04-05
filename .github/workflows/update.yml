@@ -30,7 +30,7 @@ jobs:
 
       - name: Run IPTV update
         run: |
-          python -m src.main --no-cache --output ./output
+          python -u -m src.main --no-cache --output ./output
 
       - name: Commit and push
         run: |
