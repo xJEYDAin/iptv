@@ -6,18 +6,21 @@ import os
 import sys
 from pathlib import Path
 
-from .config import Config
-from .fetcher import Fetcher
-from .validator import Validator
-from .grouper import Grouper
-from .generator import Generator
-from .cache import Cache
+# 确保 src 目录在 path 中
+sys.path.insert(0, str(Path(__file__).parent.parent))
+
+from src.config import Config
+from src.fetcher import Fetcher
+from src.validator import Validator
+from src.grouper import Grouper
+from src.generator import Generator
+from src.cache import Cache
 
 
 async def run(config_dir: str = None, output_dir: str = None, use_cache: bool = True, skip_validation: bool = False):
     """运行完整流程"""
     config = Config(config_dir)
-    output_dir = Path(output_dir) if output_dir else Path(__file__).parent.parent
+    output_dir = Path(output_dir) if output_dir else Path(__file__).parent.parent / "output"
     output_dir.mkdir(parents=True, exist_ok=True)
 
     cache = Cache()
@@ -28,7 +31,7 @@ async def run(config_dir: str = None, output_dir: str = None, use_cache: bool = 
         channels_data = cache.get(cache_key)
         if channels_data:
             print(f"[Main] Using cached channels: {len(channels_data)}")
-            from .fetcher import Channel
+            from src.fetcher import Channel
             channels = [Channel(**d) for d in channels_data]
         else:
             fetcher = Fetcher(config)
@@ -57,27 +60,24 @@ async def run(config_dir: str = None, output_dir: str = None, use_cache: bool = 
     # 4. 生成
     generator = Generator()
 
-    # 生成合并文件
-    combined_path = output_dir / "iptv.m3u"
-    generator.generate(grouped, str(combined_path))
-    print(f"[Main] Generated: {combined_path}")
-
-    # 生成分组文件
-    multi_dir = output_dir / "channels"
-    generator.generate_multi(grouped, str(multi_dir))
-    print(f"[Main] Generated grouped files in: {multi_dir}")
+    # 生成 hk_merged.m3u 和 all_merged.m3u
+    result = generator.generate_hk_and_all(grouped, str(output_dir))
+    print(f"[Main] Generated HK: {result['hk']['channels']} channels in {result['hk']['groups']} groups")
+    print(f"[Main] Generated ALL: {result['all']['channels']} channels in {result['all']['groups']} groups")
 
     # 统计
     stats = {g: len(chs) for g, chs in grouped.items()}
     stats_path = output_dir / "stats.json"
     with open(stats_path, "w", encoding="utf-8") as f:
         json.dump(stats, f, ensure_ascii=False, indent=2)
-    print(f"[Main] Stats: {stats}")
+    print(f"[Main] Stats saved to: {stats_path}")
 
     return {
         "total": len(valid_channels),
         "groups": len(grouped),
-        "output": str(combined_path),
+        "hk_channels": result['hk']['channels'],
+        "all_channels": result['all']['channels'],
+        "output": str(output_dir),
         "stats": stats,
     }
 
@@ -96,7 +96,9 @@ def main():
         use_cache=not args.no_cache,
         skip_validation=args.skip_validation,
     ))
-    print(f"\n✅ 完成！共 {result['total']} 个频道，分 {result['groups']} 组")
+    print(f"\n✅ 完成！共 {result['total']} 个有效频道，分 {result['groups']} 组")
+    print(f"   港台频道: {result['hk_channels']}")
+    print(f"   全球频道: {result['all_channels']}")
 
 
 if __name__ == "__main__":
