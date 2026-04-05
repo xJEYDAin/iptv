@@ -19,6 +19,10 @@ from src.cache import Cache
 
 async def run(config_dir: str = None, output_dir: str = None, use_cache: bool = True, skip_validation: bool = False):
     """运行完整流程"""
+    print("=" * 60)
+    print("IPTV 抓取、验证、分组、生成工具")
+    print("=" * 60)
+
     config = Config(config_dir)
     output_dir = Path(output_dir) if output_dir else Path(__file__).parent.parent / "output"
     output_dir.mkdir(parents=True, exist_ok=True)
@@ -27,10 +31,11 @@ async def run(config_dir: str = None, output_dir: str = None, use_cache: bool = 
     cache_key = "channels_raw"
 
     # 1. 抓取
+    print("\n[Step 1/4] 抓取频道...")
     if use_cache:
         channels_data = cache.get(cache_key)
         if channels_data:
-            print(f"[Main] Using cached channels: {len(channels_data)}")
+            print(f"  ✓ 使用缓存: {len(channels_data)} 个频道")
             from src.fetcher import Channel
             channels = [Channel(**d) for d in channels_data]
         else:
@@ -41,36 +46,49 @@ async def run(config_dir: str = None, output_dir: str = None, use_cache: bool = 
         fetcher = Fetcher(config)
         channels = await fetcher.fetch_all()
 
-    print(f"[Main] Fetched {len(channels)} channels")
+    print(f"  ✓ 抓取完成: 共 {len(channels)} 个频道")
 
     # 2. 验证
+    print("\n[Step 2/4] 验证 URL...")
     if skip_validation:
-        print("[Main] Skipping validation")
+        print("  ⚠ 跳过验证（--skip-validation）")
         valid_channels = channels
     else:
         validator = Validator(config)
         valid_channels = await validator.validate(channels)
-        print(f"[Main] Validated {len(valid_channels)} channels")
+        print(f"  ✓ 验证完成: {len(valid_channels)}/{len(channels)} 个有效")
 
     # 3. 分组
+    print("\n[Step 3/4] 分组频道...")
     grouper = Grouper(config)
     grouped = grouper.group(valid_channels)
-    print(f"[Main] Grouped into {len(grouped)} groups")
+
+    # 统计各分组频道数
+    top_groups = sorted(grouped.items(), key=lambda x: len(x[1]), reverse=True)[:5]
+    print(f"  ✓ 分组完成: 共 {len(grouped)} 个分组")
+    print(f"  Top 5 分组:")
+    for name, chs in top_groups:
+        print(f"    - {name}: {len(chs)} 个频道")
 
     # 4. 生成
+    print("\n[Step 4/4] 生成播放列表...")
     generator = Generator()
 
     # 生成 hk_merged.m3u 和 all_merged.m3u
     result = generator.generate_hk_and_all(grouped, str(output_dir))
-    print(f"[Main] Generated HK: {result['hk']['channels']} channels in {result['hk']['groups']} groups")
-    print(f"[Main] Generated ALL: {result['all']['channels']} channels in {result['all']['groups']} groups")
+    print(f"  ✓ 港澳台: {result['hk']['channels']} 频道, {result['hk']['groups']} 分组")
+    print(f"  ✓ 全球: {result['all']['channels']} 频道, {result['all']['groups']} 分组")
 
     # 统计
     stats = {g: len(chs) for g, chs in grouped.items()}
     stats_path = output_dir / "stats.json"
     with open(stats_path, "w", encoding="utf-8") as f:
         json.dump(stats, f, ensure_ascii=False, indent=2)
-    print(f"[Main] Stats saved to: {stats_path}")
+    print(f"  ✓ 统计已保存: {stats_path}")
+
+    print("\n" + "=" * 60)
+    print("完成！")
+    print("=" * 60)
 
     return {
         "total": len(valid_channels),
@@ -96,9 +114,11 @@ def main():
         use_cache=not args.no_cache,
         skip_validation=args.skip_validation,
     ))
-    print(f"\n✅ 完成！共 {result['total']} 个有效频道，分 {result['groups']} 组")
-    print(f"   港台频道: {result['hk_channels']}")
-    print(f"   全球频道: {result['all_channels']}")
+    print(f"\n📊 总计:")
+    print(f"   有效频道: {result['total']}")
+    print(f"   分组数: {result['groups']}")
+    print(f"   港澳台: {result['hk_channels']}")
+    print(f"   全球: {result['all_channels']}")
 
 
 if __name__ == "__main__":

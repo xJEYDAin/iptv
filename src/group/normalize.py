@@ -238,7 +238,12 @@ def merge_duplicate_channels(channels: List[dict]) -> List[dict]:
     - 每组最多保留 3 个 URL（1 个最优 + 2 个备用）
     - 优先级: HK CDN > 国内 CDN > 普通 URL
     """
-    from lib.whitelist import is_hk_cdn_whitelisted
+    try:
+        from src.lib.whitelist import is_hk_cdn_whitelisted
+    except ImportError:
+        # 回退：不做 CDN 白名单检查
+        def is_hk_cdn_whitelisted(url):
+            return False
 
     # 按标准化名称分组
     groups: Dict[str, List[dict]] = {}
