@@ -14,7 +14,7 @@ from .generator import Generator
 from .cache import Cache
 
 
-async def run(config_dir: str = None, output_dir: str = None, use_cache: bool = True):
+async def run(config_dir: str = None, output_dir: str = None, use_cache: bool = True, skip_validation: bool = False):
     """运行完整流程"""
     config = Config(config_dir)
     output_dir = Path(output_dir) if output_dir else Path(__file__).parent.parent
@@ -41,9 +41,13 @@ async def run(config_dir: str = None, output_dir: str = None, use_cache: bool = 
     print(f"[Main] Fetched {len(channels)} channels")
 
     # 2. 验证
-    validator = Validator(config)
-    valid_channels = await validator.validate(channels)
-    print(f"[Main] Validated {len(valid_channels)} channels")
+    if skip_validation:
+        print("[Main] Skipping validation")
+        valid_channels = channels
+    else:
+        validator = Validator(config)
+        valid_channels = await validator.validate(channels)
+        print(f"[Main] Validated {len(valid_channels)} channels")
 
     # 3. 分组
     grouper = Grouper(config)
@@ -83,12 +87,14 @@ def main():
     parser.add_argument("--config", "-c", default=None, help="配置文件目录")
     parser.add_argument("--output", "-o", default=None, help="输出目录")
     parser.add_argument("--no-cache", action="store_true", help="禁用缓存")
+    parser.add_argument("--skip-validation", action="store_true", help="跳过 URL 验证")
     args = parser.parse_args()
 
     result = asyncio.run(run(
         config_dir=args.config,
         output_dir=args.output,
         use_cache=not args.no_cache,
+        skip_validation=args.skip_validation,
     ))
     print(f"\n✅ 完成！共 {result['total']} 个频道，分 {result['groups']} 组")
 
