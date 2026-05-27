@@ -2,10 +2,12 @@
 #EXTVLCOPT:network-caching=1000
 #EXTVLCOPT:live-cache=1000
 #EXTVLCOPT:ttl=5
-#PLAYLIST:HK & TW IPTV 2026-05-26
-# Total: 78 channels, 17 categories
+#PLAYLIST:HK & TW IPTV 2026-05-27
+# Total: 80 channels, 16 categories
 
-#EXTGRP:📺 央视频道 (1)
+#EXTGRP:📺 央视频道 (2)
+#EXTINF:-1 tvg-name="CreaTVBayVoiceTVChannel27" tvg-logo="https://i.imgur.com/IYuv0RF.png" group-title="📺 央视频道",CreaTVBayVoiceTVChannel27
+https://reflect-creatv.cablecast.tv/live-19/live/live.m3u8
 #EXTINF:-1 tvg-name="PeaceTVBangla" tvg-logo="https://i.imgur.com/1ztVXUi.png" group-title="📺 央视频道",PeaceTVBangla
 https://dzkyvlfyge.erbvr.com/PeaceTvBangla/index.m3u8
 
@@ -23,17 +25,21 @@ https://bojonegoro.staratv.id/hls/stream.m3u8
 #EXTINF:-1 tvg-name="华视" tvg-logo="https://i.imgur.com/k4fhcPl.png" group-title="📡 卫视频道",华视
 https://raw.githubusercontent.com/ChiSheng9/iptv/master/TV12.m3u8
 
-#EXTGRP:📺 TVB (5)
+#EXTGRP:📺 TVB (7)
 #EXTINF:-1 tvg-name="TVB 翡翠台" group-title="📺 TVB",TVB 翡翠台
 http://r.jdshipin.com/qrfbg
 #EXTINF:-1 tvg-name="TVB 明珠台" group-title="📺 TVB",TVB 明珠台
 http://r.jdshipin.com/ZQ4kN
 #EXTINF:-1 tvg-name="TVB J2" group-title="📺 TVB",TVB J2
 http://fm1077.serv00.net/Smart.php?id=j2_twn$LR•IPV4
+#EXTINF:-1 tvg-name="華麗翡翠台" group-title="📺 TVB",華麗翡翠台
+http://r.jdshipin.com/thuYX
 #EXTINF:-1 tvg-name="TVB Plus" tvg-logo="https://gitee.com/suxuang/logo/raw/master/mylogo/TVB Plus.png" group-title="📺 TVB",TVB Plus
 http://r.jdshipin.com/Nr5jq
 #EXTINF:-1 tvg-name="TVB 星河" tvg-logo="https://ghfast.top/https://raw.githubusercontent.com/CCSH/IPTV/refs/heads/main/logo/TVB星河.png" group-title="📺 TVB",TVB 星河
 https://o11.163189.xyz/stream/live/tvbxh/
+#EXTINF:-1 tvg-name="华丽翡翠台" tvg-logo="https://live.fanmingming.cn/tv/华丽翡翠台.png" group-title="📺 TVB",华丽翡翠台
+http://php.jdshipin.com/TVOD/iptv.php?id=huali2
 
 #EXTGRP:📺 ViuTV (1)
 #EXTINF:-1 tvg-name="ViuTV" group-title="📺 ViuTV",ViuTV
@@ -54,28 +60,28 @@ https://d35j504z0x2vu2.cloudfront.net/v1/master/0bc8e8376bd8417a1b6761138aa41c26
 #EXTGRP:🇹🇼 台湾 (20)
 #EXTINF:-1 tvg-name="TVBS 亚洲台" group-title="🇹🇼 台湾",TVBS 亚洲台
 http://d2e1asnsl7br7b.cloudfront.net/7782e205e72f43aeb4a48ec97f66ebbe/index_5.m3u8?zshijd
-#EXTINF:-1 tvg-name="东森美洲卫视" group-title="🇹🇼 台湾",东森美洲卫视
-http://38.64.72.148:80/hls/modn/list/2015/chunklist0.m3u8
-#EXTINF:-1 tvg-name="东森新闻" group-title="🇹🇼 台湾",东森新闻
-https://epg.pw/stream/d91376ed07fba14fec3772dd7bfcc266f213294ded9193f751afb3e7ca95f573.m3u8
-#EXTINF:-1 tvg-name="东森美洲" group-title="🇹🇼 台湾",东森美洲
-https://epg.pw/stream/3f54de58cf44244a3a2e14cd7388cac348a17ada96c4aba4b5a65f1c4ceeabca.m3u8
-#EXTINF:-1 tvg-name="TVBS 新闻" group-title="🇹🇼 台湾",TVBS 新闻
-http://61.221.215.25:8800/hls/9/index.m3u8
 #EXTINF:-1 tvg-name="东森超视" group-title="🇹🇼 台湾",东森超视
 http://38.64.72.148:80/hls/modn/list/2013/chunklist1.m3u8
+#EXTINF:-1 tvg-name="TVBS 新闻" group-title="🇹🇼 台湾",TVBS 新闻
+http://61.221.215.25:8800/hls/9/index.m3u8
+#EXTINF:-1 tvg-name="东森美洲卫视" group-title="🇹🇼 台湾",东森美洲卫视
+http://38.64.72.148:80/hls/modn/list/2015/chunklist0.m3u8
 #EXTINF:-1 tvg-name="东森综合" group-title="🇹🇼 台湾",东森综合
 https://haoyunlai.serv00.net/Smartv-1.php?id=ettvzhonghe
+#EXTINF:-1 tvg-name="东森新闻" group-title="🇹🇼 台湾",东森新闻
+https://epg.pw/stream/d91376ed07fba14fec3772dd7bfcc266f213294ded9193f751afb3e7ca95f573.m3u8
+#EXTINF:-1 tvg-name="东森戏剧" tvg-logo="https://ghfast.top/https://raw.githubusercontent.com/CCSH/IPTV/refs/heads/main/logo/东森戏剧.png" group-title="🇹🇼 台湾",东森戏剧
+http://fm1077.serv00.net/Smart.php?id=ettvdrama
+#EXTINF:-1 tvg-name="东森美洲" group-title="🇹🇼 台湾",东森美洲
+https://epg.pw/stream/3f54de58cf44244a3a2e14cd7388cac348a17ada96c4aba4b5a65f1c4ceeabca.m3u8
 #EXTINF:-1 tvg-name="东森财经" group-title="🇹🇼 台湾",东森财经
 https://epg.pw/stream/c4452be892906f85b59ac80ba36d1924380e404a65012937dc589180fd84ebe2.m3u8
 #EXTINF:-1 tvg-name="东森幼幼台" group-title="🇹🇼 台湾",东森幼幼台
 https://epg.pw/stream/de717f629316508933939cc9d90e62b3a86d6377aff1ca390e1717e68c960eb4.m3u8
-#EXTINF:-1 tvg-name="东森戏剧" tvg-logo="https://ghfast.top/https://raw.githubusercontent.com/CCSH/IPTV/refs/heads/main/logo/东森戏剧.png" group-title="🇹🇼 台湾",东森戏剧
-http://fm1077.serv00.net/Smart.php?id=ettvdrama
-#EXTINF:-1 tvg-name="中视" group-title="🇹🇼 台湾",中视
-http://37.27.111.214:8080/live/7/hls.m3u8
 #EXTINF:-1 tvg-name="公视" tvg-logo="https://ghfast.top/https://raw.githubusercontent.com/CCSH/IPTV/refs/heads/main/logo/公视.png" group-title="🇹🇼 台湾",公视
 http://fm1077.serv00.net/Smart.php?id=ctv_taiwan
+#EXTINF:-1 tvg-name="中视" group-title="🇹🇼 台湾",中视
+https://epg.pw/stream/850967cb490cf3c98e20a19b56de0e5a029710949cff71a4132bf059dcf656bc.m3u8
 #EXTINF:-1 tvg-name="TVBS 新闻台" tvg-logo="https://ghfast.top/https://raw.githubusercontent.com/CCSH/IPTV/refs/heads/main/logo/TVBS新闻台.png" group-title="🇹🇼 台湾",TVBS 新闻台
 http://fm1077.serv00.net/Smart.php?id=tvbs_n
 #EXTINF:-1 tvg-name="三立 台湾台" tvg-logo="https://ghfast.top/https://raw.githubusercontent.com/CCSH/IPTV/refs/heads/main/logo/三立台湾台.png" group-title="🇹🇼 台湾",三立 台湾台
@@ -144,10 +150,6 @@ https://cdn.freevisiontv.co.za/sttv/smil:brics.stream.smil/playlist.m3u8
 #EXTGRP:🧸 儿童频道 (1)
 #EXTINF:-1 tvg-name="TVBahoriston" tvg-logo="https://i.imgur.com/Dacai5z.png" group-title="🧸 儿童频道",TVBahoriston
 https://live.teleradiocom.tj/3/3m.m3u8
-
-#EXTGRP:🇨🇳 中国源 (1)
-#EXTINF:-1 tvg-name="华丽翡翠台" tvg-logo="https://gitee.com/suxuang/logo/raw/master/mylogo/华丽翡翠台.png" group-title="🇨🇳 中国源",华丽翡翠台
-http://r.jdshipin.com/thuYX
 
 #EXTGRP:🌐 国际 (20)
 #EXTINF:-1 tvg-name="Canal30TVBethel" tvg-logo="https://i.imgur.com/PP4U1JL.png" group-title="🌐 国际",Canal30TVBethel
