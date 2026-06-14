@@ -2,8 +2,8 @@
 #EXTVLCOPT:network-caching=1000
 #EXTVLCOPT:live-cache=1000
 #EXTVLCOPT:ttl=5
-#PLAYLIST:HK & TW IPTV 2026-06-13
-# Total: 80 channels, 18 categories
+#PLAYLIST:HK & TW IPTV 2026-06-14
+# Total: 80 channels, 19 categories
 
 #EXTGRP:📺 央视频道 (2)
 #EXTINF:-1 tvg-name="CreaTVBayVoiceTVChannel27" tvg-logo="https://i.imgur.com/IYuv0RF.png" group-title="📺 央视频道",CreaTVBayVoiceTVChannel27
@@ -23,23 +23,21 @@ https://bandung.staratv.id/hls/0/stream.m3u8
 #EXTINF:-1 tvg-name="StaraTVBojonegoro" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/9/91/Stara_TV_Sumedang_fix.png" group-title="📡 卫视频道",StaraTVBojonegoro
 https://bojonegoro.staratv.id/hls/stream.m3u8
 
-#EXTGRP:📺 TVB (6)
+#EXTGRP:📺 TVB (5)
 #EXTINF:-1 tvg-name="TVB 明珠台" tvg-logo="https://ghfast.top/https://raw.githubusercontent.com/CCSH/IPTV/refs/heads/main/logo/TVBPearl.png" group-title="📺 TVB",TVB 明珠台
-http://r.jdshipin.com/jUx8K
+http://cdn6.163189.xyz/163189/mzt
 #EXTINF:-1 tvg-name="TVB Plus" tvg-logo="https://ghfast.top/https://raw.githubusercontent.com/CCSH/IPTV/refs/heads/main/logo/TVBPlus.png" group-title="📺 TVB",TVB Plus
 https://o11.163189.xyz/stream/tvb/tvbp/
 #EXTINF:-1 tvg-name="TVB 星河" tvg-logo="https://ghfast.top/https://raw.githubusercontent.com/CCSH/IPTV/refs/heads/main/logo/TVB星河.png" group-title="📺 TVB",TVB 星河
 http://o11.163189.xyz/stream/live/tvbxh/
 #EXTINF:-1 tvg-name="TVB 翡翠台" tvg-logo="https://ghfast.top/https://raw.githubusercontent.com/CCSH/IPTV/refs/heads/main/logo/TVB翡翠台.png" group-title="📺 TVB",TVB 翡翠台
 http://cdn6.163189.xyz/163189/fct
-#EXTINF:-1 tvg-name="TVB 无线新闻" tvg-logo="https://live.fanmingming.cn/tv/无线新闻台.png" group-title="📺 TVB",TVB 无线新闻
-http://cdn9.163189.xyz/smt1.1.php?id=inews_twn
 #EXTINF:-1 tvg-name="TVB 娱乐新闻" tvg-logo="https://live.fanmingming.cn/tv/TVB娱乐新闻台.png" group-title="📺 TVB",TVB 娱乐新闻
 http://php.jdshipin.com/TVOD/iptv.php?id=tvbylxw
 
 #EXTGRP:📺 ViuTV (1)
 #EXTINF:-1 tvg-name="ViuTV" tvg-logo="https://ghfast.top/https://raw.githubusercontent.com/CCSH/IPTV/refs/heads/main/logo/ViuTV.png" group-title="📺 ViuTV",ViuTV
-http://php.jdshipin.com/TVOD/iptv.php?id=viutv
+http://php.jdshipin.com/TVOD/iptv.php?id=viutv2
 
 #EXTGRP:📺 RTHK (3)
 #EXTINF:-1 tvg-name="RTHKTV31" tvg-logo="https://i.imgur.com/kf818kM.png" group-title="📺 RTHK",RTHKTV31
@@ -58,6 +56,10 @@ http://php.jdshipin.com/TVOD/iptv.php?id=hoytv
 https://uycyyuuzyh.turknet.ercdn.net/nphindgytw/nowtv/nowtv.m3u8
 #EXTINF:-1 tvg-name="likeGecko)Chrome/145.0.0.0Safari/537.36Edg/145.0.0.0"group-title="Entertainment;Sports",RightNowTv" tvg-logo="https://i.imgur.com/OxbIla4.png" group-title="📺 Now TV",likeGecko)Chrome/145.0.0.0Safari/537.36Edg/145.0.0.0"group-title="Entertainment;Sports",RightNowTv
 https://d35j504z0x2vu2.cloudfront.net/v1/master/0bc8e8376bd8417a1b6761138aa41c26c7309312/right-now-tv/playlist.m3u8?ads.vf=XXIrbw6_Odq
+
+#EXTGRP:📺 有线电视 (1)
+#EXTINF:-1 tvg-name="有线电视新闻" tvg-logo="https://gitee.com/suxuang/logo/raw/master/mylogo/有线新闻.png" group-title="📺 有线电视",有线电视新闻
+http://iptv.4666888.xyz/iptv2A.php?id=31
 
 #EXTGRP:🇹🇼 台湾 (13)
 #EXTINF:-1 tvg-name="TVBS 新闻台" tvg-logo="https://ghfast.top/https://raw.githubusercontent.com/CCSH/IPTV/refs/heads/main/logo/TVBS新闻台.png" group-title="🇹🇼 台湾",TVBS 新闻台
