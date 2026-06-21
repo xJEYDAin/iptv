@@ -2,8 +2,8 @@
 #EXTVLCOPT:network-caching=1000
 #EXTVLCOPT:live-cache=1000
 #EXTVLCOPT:ttl=5
-#PLAYLIST:HK & TW IPTV 2026-06-20
-# Total: 78 channels, 19 categories
+#PLAYLIST:HK & TW IPTV 2026-06-21
+# Total: 80 channels, 20 categories
 
 #EXTGRP:📺 央视频道 (2)
 #EXTINF:-1 tvg-name="CreaTVBayVoiceTVChannel27" tvg-logo="https://i.imgur.com/IYuv0RF.png" group-title="📺 央视频道",CreaTVBayVoiceTVChannel27
@@ -131,15 +131,21 @@ https://rusbrics.mediacdn.ru/cdn/brics/russian/playlist.m3u8
 #EXTINF:-1 tvg-name="TVBRICSSpanish" tvg-logo="https://i.imgur.com/vLpm8tN.png" group-title="🌍 欧洲",TVBRICSSpanish
 https://espbrics.mediacdn.ru/cdn/brics/spanish/playlist.m3u8
 
-#EXTGRP:🌎 拉丁美洲 (2)
+#EXTGRP:🌎 拉丁美洲 (3)
 #EXTINF:-1 tvg-name="ConecTVBrasil" tvg-logo="https://i.imgur.com/XN6jjMR.png" group-title="🌎 拉丁美洲",ConecTVBrasil
 https://stream01.msolutionbrasil.com.br/hls/conectv/live.m3u8
 #EXTINF:-1 tvg-name="TVBrasil" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/TvBrasil2023.png/960px-TvBrasil2023.png" group-title="🌎 拉丁美洲",TVBrasil
 https://tvbrasil-stream.ebc.com.br/index.m3u8
+#EXTINF:-1 tvg-name="TVBrasilOeste" tvg-logo="https://i.imgur.com/noqGfuy.png" group-title="🌎 拉丁美洲",TVBrasilOeste
+https://5ad482a77183d.streamlock.net/operacaotbomt.com/operacaotbomt.com/playlist.m3u8
 
 #EXTGRP:🌍 非洲 (1)
 #EXTINF:-1 tvg-name="TVBRICSAfrica" tvg-logo="https://admango.cdn.mangomolo.com/analytics/uploads/188/666abcee75.jpeg" group-title="🌍 非洲",TVBRICSAfrica
 https://cdn.freevisiontv.co.za/sttv/smil:brics.stream.smil/playlist.m3u8
+
+#EXTGRP:📰 新闻财经 (1)
+#EXTINF:-1 tvg-name="likeGecko)Chrome/149.0.0.0Safari/537.3"group-title="Business",BloombergTVBulgaria" tvg-logo="https://i.imgur.com/cHwOVqk.png" group-title="📰 新闻财经",likeGecko)Chrome/149.0.0.0Safari/537.3"group-title="Business",BloombergTVBulgaria
+http://213.91.179.28:8000/play/a04m
 
 #EXTGRP:🧸 儿童频道 (1)
 #EXTINF:-1 tvg-name="TVBahoriston" tvg-logo="https://i.imgur.com/Dacai5z.png" group-title="🧸 儿童频道",TVBahoriston
