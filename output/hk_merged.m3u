@@ -2,8 +2,8 @@
 #EXTVLCOPT:network-caching=1000
 #EXTVLCOPT:live-cache=1000
 #EXTVLCOPT:ttl=5
-#PLAYLIST:HK & TW IPTV 2026-07-06
-# Total: 70 channels, 17 categories
+#PLAYLIST:HK & TW IPTV 2026-07-07
+# Total: 71 channels, 18 categories
 
 #EXTGRP:📺 央视频道 (2)
 #EXTINF:-1 tvg-name="CreaTVBayVoiceTVChannel27" tvg-logo="https://i.imgur.com/IYuv0RF.png" group-title="📺 央视频道",CreaTVBayVoiceTVChannel27
@@ -130,6 +130,10 @@ https://cdn.freevisiontv.co.za/sttv/smil:brics.stream.smil/playlist.m3u8
 #EXTGRP:📰 新闻财经 (1)
 #EXTINF:-1 tvg-name="likeGecko)Chrome/149.0.0.0Safari/537.3"group-title="Business",BloombergTVBulgaria" tvg-logo="https://i.imgur.com/cHwOVqk.png" group-title="📰 新闻财经",likeGecko)Chrome/149.0.0.0Safari/537.3"group-title="Business",BloombergTVBulgaria
 http://213.91.179.28:8000/play/a04m
+
+#EXTGRP:🧸 儿童频道 (1)
+#EXTINF:-1 tvg-name="TVBahoriston" tvg-logo="https://i.imgur.com/Dacai5z.png" group-title="🧸 儿童频道",TVBahoriston
+https://live.teleradiocom.tj/3/3m.m3u8
 
 #EXTGRP:📺 纪录片 (1)
 #EXTINF:-1 tvg-name="PlutoTVBritainatWar" tvg-logo="https://images.pluto.tv/channels/625e8cb585ef320007806caf/colorLogoPNG.png" group-title="📺 纪录片",PlutoTVBritainatWar
