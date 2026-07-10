@@ -2,8 +2,8 @@
 #EXTVLCOPT:network-caching=1000
 #EXTVLCOPT:live-cache=1000
 #EXTVLCOPT:ttl=5
-#PLAYLIST:HK & TW IPTV 2026-07-09
-# Total: 72 channels, 18 categories
+#PLAYLIST:HK & TW IPTV 2026-07-10
+# Total: 71 channels, 18 categories
 
 #EXTGRP:📺 央视频道 (2)
 #EXTINF:-1 tvg-name="CreaTVBayVoiceTVChannel27" tvg-logo="https://i.imgur.com/IYuv0RF.png" group-title="📺 央视频道",CreaTVBayVoiceTVChannel27
@@ -13,7 +13,7 @@ https://dzkyvlfyge.erbvr.com/PeaceTvBangla/index.m3u8
 
 #EXTGRP:📡 卫视频道 (5)
 #EXTINF:-1 tvg-name="华视" tvg-logo="https://ghfast.top/https://raw.githubusercontent.com/CCSH/IPTV/refs/heads/main/logo/华视.png" group-title="📡 卫视频道",华视
-https://raw.githubusercontent.com/ChiSheng9/iptv/master/TV12.m3u8
+http://74.91.26.218:82/live/cts.m3u8
 #EXTINF:-1 tvg-name="华视新闻" tvg-logo="https://ghfast.top/https://raw.githubusercontent.com/CCSH/IPTV/refs/heads/main/logo/华视新闻.png" group-title="📡 卫视频道",华视新闻
 http://37.27.111.214:8080/live/8/hls.m3u8
 #EXTINF:-1 tvg-name="NovaTVBrasov" tvg-logo="https://i.imgur.com/33Vn0Ij.png" group-title="📡 卫视频道",NovaTVBrasov
@@ -71,7 +71,7 @@ https://raw.githubusercontent.com/ChiSheng9/iptv/master/TV03.m3u8
 #EXTINF:-1 tvg-name="likeGecko)Chrome/144.0.0.0Safari/537.36"group-title="General",LotusMacauHD" tvg-logo="https://i.imgur.com/7j8Lnog.png" group-title="🇲🇴 澳门",likeGecko)Chrome/144.0.0.0Safari/537.36"group-title="General",LotusMacauHD
 https://cdn4.skygo.mn/live/disk1/Lotus/HLSv3-FTA/Lotus.m3u8
 
-#EXTGRP:🎬 电影频道 (7)
+#EXTGRP:🎬 电影频道 (6)
 #EXTINF:-1 tvg-name="EbonyTVbyLionsgate" tvg-logo="https://provider-static.plex.tv/epg/cms/production/234d5377-ab07-41bf-acd6-34c17c1c051a/EbonyTV_Plex_Logo_Light_1500x1000.png" group-title="🎬 电影频道",EbonyTVbyLionsgate
 https://aegis-cloudfront-1.tubi.video/a0ad4b53-ab3a-48dd-be12-bc7f533c372c/playlist.m3u8
 #EXTINF:-1 tvg-name="PlutoTVBangBang" tvg-logo="https://images.pluto.tv/channels/663b9dc7cb3ea10008f1a0ce/colorLogoPNG.png" group-title="🎬 电影频道",PlutoTVBangBang
@@ -80,8 +80,6 @@ https://jmp2.uk/plu-663b9dc7cb3ea10008f1a0ce.m3u8
 https://jmp2.uk/plu-684bf01df7d8b74b625b7dd1.m3u8
 #EXTINF:-1 tvg-name="PlutoTVBritischeSerien" tvg-logo="https://images.pluto.tv/channels/677e5a3d7bffa6000808dbf2/colorLogoPNG.png" group-title="🎬 电影频道",PlutoTVBritischeSerien
 https://jmp2.uk/plu-677e5a3d7bffa6000808dbf2.m3u8
-#EXTINF:-1 tvg-name="PlutoTVBrittiskCrime&Drama" tvg-logo="https://images.pluto.tv/channels/65b91b53dc10a40008d54777/colorLogoPNG.png" group-title="🎬 电影频道",PlutoTVBrittiskCrime&Drama
-https://jmp2.uk/plu-65b91b53dc10a40008d54777.m3u8
 #EXTINF:-1 tvg-name="PlutoTVBud&Terence" tvg-logo="https://images.pluto.tv/channels/64be7398e4391c0008cdedfe/colorLogoPNG_1776936976930.png" group-title="🎬 电影频道",PlutoTVBud&Terence
 https://jmp2.uk/plu-64be7398e4391c0008cdedfe.m3u8
 #EXTINF:-1 tvg-name="PlutoTVBuskis" tvg-logo="https://images.pluto.tv/channels/660d5f2a635c75000828855f/colorLogoPNG.png" group-title="🎬 电影频道",PlutoTVBuskis
