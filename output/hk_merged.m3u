@@ -2,8 +2,8 @@
 #EXTVLCOPT:network-caching=1000
 #EXTVLCOPT:live-cache=1000
 #EXTVLCOPT:ttl=5
-#PLAYLIST:HK & TW IPTV 2026-08-01
-# Total: 85 channels, 21 categories
+#PLAYLIST:HK & TW IPTV 2026-08-02
+# Total: 82 channels, 20 categories
 
 #EXTGRP:📺 央视频道 (2)
 #EXTINF:-1 tvg-name="CreaTVBayVoiceTVChannel27" tvg-logo="https://i.imgur.com/IYuv0RF.png" group-title="📺 央视频道",CreaTVBayVoiceTVChannel27
@@ -36,10 +36,6 @@ http://r.jdshipin.com/62WM7
 #EXTGRP:📺 ViuTV (1)
 #EXTINF:-1 tvg-name="ViuTV" tvg-logo="https://ghfast.top/https://raw.githubusercontent.com/CCSH/IPTV/refs/heads/main/logo/ViuTV.png" group-title="📺 ViuTV",ViuTV
 http://r.jdshipin.com/vSJvl
-
-#EXTGRP:📺 RTHK (1)
-#EXTINF:-1 tvg-name="RTHKTV31" tvg-logo="https://i.imgur.com/kf818kM.png" group-title="📺 RTHK",RTHKTV31
-https://rthktv31-live.akamaized.net/hls/live/2036818/RTHKTV31/master.m3u8
 
 #EXTGRP:📺 Now TV (2)
 #EXTINF:-1 tvg-name="Now TV" tvg-logo="https://i.imgur.com/5EYjWK7.png" group-title="📺 Now TV",Now TV
@@ -139,15 +135,13 @@ https://espbrics.mediacdn.ru/cdn/brics/spanish/playlist.m3u8
 #EXTINF:-1 tvg-name="CitytvBogota" tvg-logo="https://i.imgur.com/h7K9EW9.png" group-title="🇺🇸 北美",CitytvBogota
 http://138.121.15.230:9002/CITY-TV/index.m3u8
 
-#EXTGRP:🌎 拉丁美洲 (4)
+#EXTGRP:🌎 拉丁美洲 (3)
 #EXTINF:-1 tvg-name="ConecTVBrasil" tvg-logo="https://i.imgur.com/XN6jjMR.png" group-title="🌎 拉丁美洲",ConecTVBrasil
 https://stream01.msolutionbrasil.com.br/hls/conectv/live.m3u8
 #EXTINF:-1 tvg-name="RCTVBrasil" tvg-logo="https://eswqkrogupaisirwcsys.supabase.co/storage/v1/object/public/mbc-media/canais/1776378749826-jef0fj1ekwq.png" group-title="🌎 拉丁美洲",RCTVBrasil
 https://stmv.webtvninjas.com.br/rctv/rctv/playlist.m3u8
 #EXTINF:-1 tvg-name="TVBrasil" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/TvBrasil2023.png/960px-TvBrasil2023.png" group-title="🌎 拉丁美洲",TVBrasil
 http://45.162.64.114/TV_BRASIL/index.m3u8
-#EXTINF:-1 tvg-name="TVBrasilOeste" tvg-logo="https://i.imgur.com/noqGfuy.png" group-title="🌎 拉丁美洲",TVBrasilOeste
-https://5ad482a77183d.streamlock.net/operacaotbomt.com/operacaotbomt.com/playlist.m3u8
 
 #EXTGRP:🌍 非洲 (1)
 #EXTINF:-1 tvg-name="TVBRICSAfrica" tvg-logo="https://admango.cdn.mangomolo.com/analytics/uploads/188/666abcee75.jpeg" group-title="🌍 非洲",TVBRICSAfrica
@@ -169,9 +163,7 @@ https://jmp2.uk/plu-625e8cb585ef320007806caf.m3u8
 #EXTINF:-1 tvg-name="华丽翡翠台" tvg-logo="https://gitee.com/suxuang/logo/raw/master/mylogo/华丽翡翠台.png" group-title="🇨🇳 中国源",华丽翡翠台
 http://r.jdshipin.com/thuYX
 
-#EXTGRP:🌐 国际 (20)
-#EXTINF:-1 tvg-name="ABTVBariloche" tvg-logo="https://i.imgur.com/l4TSfDr.png" group-title="🌐 国际",ABTVBariloche
-https://videostream.shockmedia.com.ar/hls/abtvbariloche/abtvbariloche.m3u8
+#EXTGRP:🌐 国际 (19)
 #EXTINF:-1 tvg-name="Canal30TVBethel" tvg-logo="https://i.imgur.com/PP4U1JL.png" group-title="🌐 国际",Canal30TVBethel
 https://s.emisoras.tv:8081/canal30tvbethel/index.m3u8
 #EXTINF:-1 tvg-name="EliveTVBrescia" tvg-logo="https://i.imgur.com/gZxjLph.png" group-title="🌐 国际",EliveTVBrescia
