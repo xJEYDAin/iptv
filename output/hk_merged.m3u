@@ -2,8 +2,8 @@
 #EXTVLCOPT:network-caching=1000
 #EXTVLCOPT:live-cache=1000
 #EXTVLCOPT:ttl=5
-#PLAYLIST:HK & TW IPTV 2026-10-01
-# Total: 79 channels, 21 categories
+#PLAYLIST:HK & TW IPTV 2026-10-02
+# Total: 81 channels, 21 categories
 
 #EXTGRP:📺 央视频道 (1)
 #EXTINF:-1 tvg-name="PeaceTVBangla" tvg-logo="https://i.imgur.com/1ztVXUi.png" group-title="📺 央视频道",PeaceTVBangla
@@ -11,7 +11,7 @@ https://dzkyvlfyge.erbvr.com/PeaceTvBangla/index.m3u8
 
 #EXTGRP:📡 卫视频道 (5)
 #EXTINF:-1 tvg-name="华视" tvg-logo="https://ghfast.top/https://raw.githubusercontent.com/CCSH/IPTV/refs/heads/main/logo/华视.png" group-title="📡 卫视频道",华视
-https://7612-5516-affc-d88b.kylintv.tv/live/ctshd_iphone.m3u8
+https://raw.githubusercontent.com/ChiSheng9/iptv/master/TV12.m3u8
 #EXTINF:-1 tvg-name="AdrenalinaPuraTVBrazil" tvg-logo="https://i.imgur.com/Pvid2iH.png" group-title="📡 卫视频道",AdrenalinaPuraTVBrazil
 https://jmp2.uk/plu-61b790b985706b00072cb797.m3u8
 #EXTINF:-1 tvg-name="NovaTVBrasov" tvg-logo="https://i.imgur.com/33Vn0Ij.png" group-title="📡 卫视频道",NovaTVBrasov
@@ -23,11 +23,11 @@ https://bojonegoro.staratv.id/hls/stream.m3u8
 
 #EXTGRP:📺 TVB (5)
 #EXTINF:-1 tvg-name="TVB 明珠台" tvg-logo="https://ghfast.top/https://raw.githubusercontent.com/CCSH/IPTV/refs/heads/main/logo/TVBPearl.png" group-title="📺 TVB",TVB 明珠台
-http://php.jdshipin.com/TVOD/iptv.php?id=mzt2
+http://r.jdshipin.com/ZQ4kN
 #EXTINF:-1 tvg-name="TVB Plus" tvg-logo="https://ghfast.top/https://raw.githubusercontent.com/CCSH/IPTV/refs/heads/main/logo/TVBPlus.png" group-title="📺 TVB",TVB Plus
-http://php.jdshipin.com/TVOD/iptv.php?id=j2
+http://r.jdshipin.com/Nr5jq
 #EXTINF:-1 tvg-name="TVB 星河" tvg-logo="https://ghfast.top/https://raw.githubusercontent.com/CCSH/IPTV/refs/heads/main/logo/TVB星河.png" group-title="📺 TVB",TVB 星河
-http://r.jdshipin.com/Voac4
+http://r.jdshipin.com/sXuuD
 #EXTINF:-1 tvg-name="TVB 翡翠台" tvg-logo="https://ghfast.top/https://raw.githubusercontent.com/CCSH/IPTV/refs/heads/main/logo/TVB翡翠台.png" group-title="📺 TVB",TVB 翡翠台
 http://r.jdshipin.com/GeWKr
 #EXTINF:-1 tvg-name="TVB 娱乐新闻" tvg-logo="https://live.fanmingming.cn/tv/TVB娱乐新闻台.png" group-title="📺 TVB",TVB 娱乐新闻
@@ -87,7 +87,7 @@ http://r.jdshipin.com/n2YZI
 #EXTINF:-1 tvg-name="澳门卫视" tvg-logo="https://gitee.com/suxuang/epglogo/raw/master/gangaotai/Aoshi1.png" group-title="🇲🇴 澳门",澳门卫视
 http://php.jdshipin.com:8880/TVOD/iptv.php?id=as
 
-#EXTGRP:🎬 电影频道 (9)
+#EXTGRP:🎬 电影频道 (10)
 #EXTINF:-1 tvg-name="BETPlutoTVBR" tvg-logo="https://images.pluto.tv/channels/5ff768b6a4c8b80008498610/colorLogoPNG_1756804608228.png" group-title="🎬 电影频道",BETPlutoTVBR
 https://jmp2.uk/plu-5ff768b6a4c8b80008498610.m3u8
 #EXTINF:-1 tvg-name="EbonyTVbyLionsgate" tvg-logo="https://provider-static.plex.tv/epg/cms/production/234d5377-ab07-41bf-acd6-34c17c1c051a/EbonyTV_Plex_Logo_Light_1500x1000.png" group-title="🎬 电影频道",EbonyTVbyLionsgate
@@ -100,6 +100,8 @@ https://jmp2.uk/plu-684bf01df7d8b74b625b7dd1.m3u8
 https://jmp2.uk/plu-677e5a3d7bffa6000808dbf2.m3u8
 #EXTINF:-1 tvg-name="PlutoTVBud&Terence" tvg-logo="https://images.pluto.tv/channels/64be7398e4391c0008cdedfe/colorLogoPNG_1776936976930.png" group-title="🎬 电影频道",PlutoTVBud&Terence
 https://jmp2.uk/plu-64be7398e4391c0008cdedfe.m3u8
+#EXTINF:-1 tvg-name="PlutoTVBud&TerenceDK" tvg-logo="https://images.pluto.tv/channels/64be7398e4391c0008cdedfe/colorLogoPNG_1776936976930.png" group-title="🎬 电影频道",PlutoTVBud&TerenceDK
+https://jmp2.uk/plu-65b915b1dc10a40008d53797.m3u8
 #EXTINF:-1 tvg-name="PlutoTVBud&TerenceNO" tvg-logo="https://images.pluto.tv/channels/64be7398e4391c0008cdedfe/colorLogoPNG_1776936976930.png" group-title="🎬 电影频道",PlutoTVBud&TerenceNO
 https://jmp2.uk/plu-65b916ec3af63d00084c5841.m3u8
 #EXTINF:-1 tvg-name="PlutoTVBuskis" tvg-logo="https://images.pluto.tv/channels/660d5f2a635c75000828855f/colorLogoPNG.png" group-title="🎬 电影频道",PlutoTVBuskis
@@ -143,11 +145,13 @@ https://espbrics.mediacdn.ru/cdn/brics/spanish/playlist.m3u8
 #EXTINF:-1 tvg-name="CitytvBogota" tvg-logo="https://i.imgur.com/h7K9EW9.png" group-title="🇺🇸 北美",CitytvBogota
 http://138.121.15.230:9002/CITY-TV/index.m3u8
 
-#EXTGRP:🌎 拉丁美洲 (2)
+#EXTGRP:🌎 拉丁美洲 (3)
 #EXTINF:-1 tvg-name="ConecTVBrasil" tvg-logo="https://i.imgur.com/XN6jjMR.png" group-title="🌎 拉丁美洲",ConecTVBrasil
 https://stream01.msolutionbrasil.com.br/hls/conectv/live.m3u8
 #EXTINF:-1 tvg-name="TVBrasil" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/TvBrasil2023.png/960px-TvBrasil2023.png" group-title="🌎 拉丁美洲",TVBrasil
 http://45.162.64.114/TV_BRASIL/index.m3u8
+#EXTINF:-1 tvg-name="TVBrasilOeste" tvg-logo="https://i.imgur.com/noqGfuy.png" group-title="🌎 拉丁美洲",TVBrasilOeste
+https://5ad482a77183d.streamlock.net/operacaotbomt.com/operacaotbomt.com/playlist.m3u8
 
 #EXTGRP:🌍 非洲 (1)
 #EXTINF:-1 tvg-name="TVBRICSAfrica" tvg-logo="https://admango.cdn.mangomolo.com/analytics/uploads/188/666abcee75.jpeg" group-title="🌍 非洲",TVBRICSAfrica
