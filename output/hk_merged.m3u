@@ -2,18 +2,16 @@
 #EXTVLCOPT:network-caching=1000
 #EXTVLCOPT:live-cache=1000
 #EXTVLCOPT:ttl=5
-#PLAYLIST:HK & TW IPTV 2026-10-10
+#PLAYLIST:HK & TW IPTV 2026-10-11
 # Total: 66 channels, 20 categories
 
 #EXTGRP:📺 央视频道 (1)
 #EXTINF:-1 tvg-name="PeaceTVBangla" tvg-logo="https://i.imgur.com/1ztVXUi.png" group-title="📺 央视频道",PeaceTVBangla
 https://dzkyvlfyge.erbvr.com/PeaceTvBangla/index.m3u8
 
-#EXTGRP:📡 卫视频道 (4)
+#EXTGRP:📡 卫视频道 (3)
 #EXTINF:-1 tvg-name="华视" tvg-logo="https://ghfast.top/https://raw.githubusercontent.com/CCSH/IPTV/refs/heads/main/logo/华视.png" group-title="📡 卫视频道",华视
 https://raw.githubusercontent.com/ChiSheng9/iptv/master/TV12.m3u8
-#EXTINF:-1 tvg-name="NovaTVBrasov" tvg-logo="https://i.imgur.com/33Vn0Ij.png" group-title="📡 卫视频道",NovaTVBrasov
-http://novapress.ro:2022/live/nova/playlist.m3u8
 #EXTINF:-1 tvg-name="StaraTVBandung" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/9/91/Stara_TV_Sumedang_fix.png" group-title="📡 卫视频道",StaraTVBandung
 https://bandung.staratv.id/hls/0/stream.m3u8
 #EXTINF:-1 tvg-name="StaraTVBojonegoro" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/9/91/Stara_TV_Sumedang_fix.png" group-title="📡 卫视频道",StaraTVBojonegoro
@@ -143,9 +141,11 @@ http://103.185.24.134:3001/ETV-BAL-BHARAT/index.m3u8
 #EXTINF:-1 tvg-name="华丽翡翠台" tvg-logo="https://gitee.com/suxuang/logo/raw/master/mylogo/华丽翡翠台.png" group-title="🇨🇳 中国源",华丽翡翠台
 http://r.jdshipin.com/thuYX
 
-#EXTGRP:🌐 国际 (13)
+#EXTGRP:🌐 国际 (14)
 #EXTINF:-1 tvg-name="ABTVBariloche" tvg-logo="https://i.imgur.com/l4TSfDr.png" group-title="🌐 国际",ABTVBariloche
 https://videostream.shockmedia.com.ar/hls/abtvbariloche/abtvbariloche.m3u8
+#EXTINF:-1 tvg-name="Canal3TVBiar" tvg-logo="https://i.imgur.com/cnKCZkK.png" group-title="🌐 国际",Canal3TVBiar
+https://avantstreaming.es/hls/canal3.m3u8
 #EXTINF:-1 tvg-name="Canal30TVBethel" tvg-logo="https://i.imgur.com/PP4U1JL.png" group-title="🌐 国际",Canal30TVBethel
 https://s.emisoras.tv:8081/canal30tvbethel/index.m3u8
 #EXTINF:-1 tvg-name="EliveTVBrescia" tvg-logo="https://i.imgur.com/gZxjLph.png" group-title="🌐 国际",EliveTVBrescia
