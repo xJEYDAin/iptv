@@ -2,8 +2,8 @@
 #EXTVLCOPT:network-caching=1000
 #EXTVLCOPT:live-cache=1000
 #EXTVLCOPT:ttl=5
-#PLAYLIST:HK & TW IPTV 2026-10-22
-# Total: 86 channels, 21 categories
+#PLAYLIST:HK & TW IPTV 2026-10-23
+# Total: 86 channels, 20 categories
 
 #EXTGRP:📺 央视频道 (1)
 #EXTINF:-1 tvg-name="PeaceTVBangla" tvg-logo="https://i.imgur.com/1ztVXUi.png" group-title="📺 央视频道",PeaceTVBangla
@@ -31,13 +31,13 @@ http://r.jdshipin.com/Nr5jq
 #EXTINF:-1 tvg-name="TVB 星河" tvg-logo="https://ghfast.top/https://raw.githubusercontent.com/CCSH/IPTV/refs/heads/main/logo/TVB星河.png" group-title="📺 TVB",TVB 星河
 http://r.jdshipin.com/sXuuD
 #EXTINF:-1 tvg-name="TVB 翡翠台" tvg-logo="https://ghfast.top/https://raw.githubusercontent.com/CCSH/IPTV/refs/heads/main/logo/TVB翡翠台.png" group-title="📺 TVB",TVB 翡翠台
-http://r.jdshipin.com/GeWKr
+http://r.jdshipin.com/n90gt
 #EXTINF:-1 tvg-name="TVB 娱乐新闻" tvg-logo="https://live.fanmingming.cn/tv/TVB娱乐新闻台.png" group-title="📺 TVB",TVB 娱乐新闻
 http://php.jdshipin.com/TVOD/iptv.php?id=tvbylxw
 
 #EXTGRP:📺 ViuTV (1)
 #EXTINF:-1 tvg-name="ViuTV" tvg-logo="https://ghfast.top/https://raw.githubusercontent.com/CCSH/IPTV/refs/heads/main/logo/ViuTV.png" group-title="📺 ViuTV",ViuTV
-http://php.jdshipin.com/TVOD/iptv.php?id=viutv
+https://10.fast.hidns.vip/163189/viu/
 
 #EXTGRP:📺 RTHK (2)
 #EXTINF:-1 tvg-name="RTHK31" tvg-logo="https://live.fanmingming.cn/tv/RTHK31.png" group-title="📺 RTHK",RTHK31
@@ -171,10 +171,6 @@ https://5ad482a77183d.streamlock.net/operacaotbomt.com/operacaotbomt.com/playlis
 #EXTINF:-1 tvg-name="TVBRICSAfrica" tvg-logo="https://admango.cdn.mangomolo.com/analytics/uploads/188/666abcee75.jpeg" group-title="🌍 非洲",TVBRICSAfrica
 https://cdn.freevisiontv.co.za/sttv/smil:brics.stream.smil/playlist.m3u8
 
-#EXTGRP:🧸 儿童频道 (1)
-#EXTINF:-1 tvg-name="ETVBalBharat" tvg-logo="https://i.imgur.com/zsTxPV9.png" group-title="🧸 儿童频道",ETVBalBharat
-http://103.185.24.134:3001/ETV-BAL-BHARAT/index.m3u8
-
 #EXTGRP:📺 纪录片 (1)
 #EXTINF:-1 tvg-name="PlutoTVBritainatWar" tvg-logo="https://images.pluto.tv/channels/625e8cb585ef320007806caf/colorLogoPNG.png" group-title="📺 纪录片",PlutoTVBritainatWar
 https://jmp2.uk/plu-625e8cb585ef320007806caf.m3u8
@@ -183,7 +179,7 @@ https://jmp2.uk/plu-625e8cb585ef320007806caf.m3u8
 #EXTINF:-1 tvg-name="华丽翡翠台" tvg-logo="https://gitee.com/suxuang/logo/raw/master/mylogo/华丽翡翠台.png" group-title="🇨🇳 中国源",华丽翡翠台
 http://r.jdshipin.com/thuYX
 
-#EXTGRP:🌐 国际 (14)
+#EXTGRP:🌐 国际 (15)
 #EXTINF:-1 tvg-name="ABTVBariloche" tvg-logo="https://i.imgur.com/l4TSfDr.png" group-title="🌐 国际",ABTVBariloche
 https://videostream.shockmedia.com.ar/hls/abtvbariloche/abtvbariloche.m3u8
 #EXTINF:-1 tvg-name="Canal3TVBiar" tvg-logo="https://i.imgur.com/cnKCZkK.png" group-title="🌐 国际",Canal3TVBiar
@@ -210,6 +206,8 @@ https://s2.tvdatta.com:3687/hybrid/play.m3u8
 https://chibrics.mediacdn.ru/cdn/brics/chinese/playlist.m3u8
 #EXTINF:-1 tvg-name="TVBRICSEnglish" tvg-logo="https://i.imgur.com/8rKNuS6.png" group-title="🌐 国际",TVBRICSEnglish
 https://engbrics.mediacdn.ru/cdn/brics/english/playlist.m3u8
+#EXTINF:-1 tvg-name="TVBrno1" tvg-logo="https://i.imgur.com/8Xm3WSn.png" group-title="🌐 国际",TVBrno1
+https://stream.polar.cz/tvbrno1/tvbrno1live-1/playlist.m3u8
 #EXTINF:-1 tvg-name="TVBuzau" tvg-logo="https://i.imgur.com/GhFmUVO.png" group-title="🌐 国际",TVBuzau
 http://78.96.33.89:8080
 
