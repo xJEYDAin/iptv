@@ -2,7 +2,7 @@
 #EXTVLCOPT:network-caching=1000
 #EXTVLCOPT:live-cache=1000
 #EXTVLCOPT:ttl=5
-#PLAYLIST:HK & TW IPTV 2026-11-20
+#PLAYLIST:HK & TW IPTV 2026-11-21
 # Total: 90 channels, 20 categories
 
 #EXTGRP:📡 卫视频道 (6)
@@ -67,7 +67,7 @@ http://4gtv.cnlive.club/channel/n722644d8/index.m3u8?q=1782639885837
 #EXTINF:-1 tvg-name="中视新闻" tvg-logo="https://ghfast.top/https://raw.githubusercontent.com/CCSH/IPTV/refs/heads/main/logo/中视新闻.png" group-title="🇹🇼 台湾",中视新闻
 http://4gtv.cnlive.club/channel/7e6461d6/index.m3u8?q=1782639885837
 #EXTINF:-1 tvg-name="中视经典" tvg-logo="https://ghfast.top/https://raw.githubusercontent.com/CCSH/IPTV/refs/heads/main/logo/中视经典.png" group-title="🇹🇼 台湾",中视经典
-http://167.88.62.43:64008/0.ts
+http://31.43.191.125:8080/restream/restream/34895
 #EXTINF:-1 tvg-name="中视菁采台" tvg-logo="https://ghfast.top/https://raw.githubusercontent.com/CCSH/IPTV/refs/heads/main/logo/中视菁采台.png" group-title="🇹🇼 台湾",中视菁采台
 http://31.43.191.125:8080/restream/restream/34894
 #EXTINF:-1 tvg-name="民视台湾台" tvg-logo="https://ghfast.top/https://raw.githubusercontent.com/CCSH/IPTV/refs/heads/main/logo/民视台湾台.png" group-title="🇹🇼 台湾",民视台湾台
